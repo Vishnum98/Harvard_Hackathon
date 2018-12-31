@@ -1,0 +1,10 @@
+Private Sub Worksheet_Change(ByVal Target As Excel.Range)
+    If Target.Column = 2 Then
+        
+        Dim lastrow As Long
+        lastrow = Cells(Rows.Count, 3).End(xlUp).Row
+                
+    
+    End If
+    
+End Sub
