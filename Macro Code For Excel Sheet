@@ -3,7 +3,7 @@ Private Sub Worksheet_Change(ByVal Target As Excel.Range)
         
         Dim lastrow As Long
         lastrow = Cells(Rows.Count, 3).End(xlUp).Row
-                
+        Range("A2:B" & lastrow).Sort key1:=Range("C2:C" & lastrow), order1:=xlDescending, Header:=xlNo        
     
     End If
     
